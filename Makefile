@@ -1,6 +1,6 @@
 CC ?= gcc
 LD ?= ld
-CFLAGS = -I$(OSSL)/include -fPIC
+CFLAGS = -I$(OSSL)/include -fPIC -Wall -Werror
 LDFLAGS = -L$(OSSL) -shared -fPIC -Wl,--version-script=./sss.ld
 
 .PHONY: clean
