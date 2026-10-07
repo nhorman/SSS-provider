@@ -140,6 +140,7 @@ static const OSSL_DISPATCH sss_keymgmt_functions[] = {
 static const OSSL_ALGORITHM sss_keymgmt[] = {
     { "SSS", "provider=sss", sss_keymgmt_functions,
       "Shamirs Secret Sharing Algorithm" },
+    {NULL, NULL, NULL }
 };
 
 const OSSL_ALGORITHM *get_sss_keymgmt()
